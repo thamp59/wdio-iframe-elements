@@ -1,15 +1,16 @@
 exports.config = {
   runner: 'local',
   specs: ['./*.spec.js'],
-  logLevel: 'warn',
+  logLevel: 'info',
   maxInstances: 1,
   capabilities: [
     {
       browserName: 'chrome',
-    },
-    {
-      browserName: 'firefox',
-    },
+      // browserVersion: 'latest',
+      webSocketUrl: true,
+      // platformName: 'Windows 11',
+      // acceptInsecureCerts: true,
+    }
   ],
   framework: 'mocha',
   reporters: ['spec'],
