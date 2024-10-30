@@ -9,7 +9,6 @@ exports.config = {
   capabilities: [
     {
       browserName: 'chrome',
-      webSocketUrl: true,
       'sauce:options': {
         tags: ['Chrome-Windows-10'],
       }
